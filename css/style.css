@@ -283,6 +283,8 @@ body{
 
 
 
+/* Table 1  */
+
  .item1{
     display: flex;
     justify-content: space-around;
@@ -389,3 +391,115 @@ body{
     margin-left: 5%;
     margin-right: 5%;
 }
+
+
+/* Tables 2  */
+
+
+.features{
+    display: grid;
+    justify-items: center;
+}
+
+.featuresInfo{
+    width: 700px;
+    display: grid;
+    justify-content: space-evenly;
+}
+
+.featuresInfo h1{
+    font-size: 20px;
+    margin-left: 200px;
+    margin-top: 15px;
+   
+}
+
+.featuresInfo h2{
+
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.featuresInfo p{
+    font-size: 17px;
+    margin-left: 50px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+    color: gray;
+
+}
+
+
+.logos{
+  
+    margin-top: 50px;
+}
+
+.itemLogos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+.logo1{
+
+    display: grid;
+    justify-items: start;
+    align-content: space-evenly;
+    gap: 30px;
+
+}
+
+.logo1 img{
+    height: 80px;
+}
+
+ .logo1 h1{
+    font-size: 30px;
+    font-weight: bold;
+} 
+
+.logo1 p{
+    letter-spacing: 2px;
+    color: gray;
+    margin-top: 50px;
+} 
+
+@media screen and (max-width:   1320px){
+
+
+    .itemLogos{
+        display: grid;
+        justify-items: start;
+        align-content: space-evenly;
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 731px){
+
+    .featuresInfo{
+        width: auto;
+    }
+
+}
+
+
+/* Table 3 */
+
+
+.table3{
+    border: 3px solid red;
+}
+
+.aboutUs{
+    border: 3px solid yellow;
+}
+
+.pub{
+    border: 3px solid blue;
+    
+}
+
