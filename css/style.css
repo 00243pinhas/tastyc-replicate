@@ -1278,18 +1278,31 @@ border-color: transparent;
 /* PAUSE 2 */
 
 .pause2{
-    border: 2px solid white;
+   
+    z-index: 1;
+    transition: all .5s;
+    margin: 40px;
+    
 }
 
-.neworks{
-    border: 2px solid yellow;
+.hiden {
+    opacity:0;
 }
+
+.shown{
+    opacity:1;
+}
+
+/* .neworks{
+    border: 2px solid yellow;
+} */
 
 .nework{
-    border: 2px solid red;
-    margin: 20px;
+  
+    
     display: flex;
     justify-content: space-between;
+    
 }
 
 .nework img{
@@ -1301,6 +1314,7 @@ border-color: transparent;
     display: flex;
     justify-content: space-around;
     margin: 20px;
+    
 }
 
 .nework ul li{
@@ -1315,12 +1329,12 @@ border-color: transparent;
 }
 
 .callUs{
-    border: 2px solid red;
+   
     margin-top: 30px;
 }
 
 .picts{
-    border: 2px solid yellow;
+
     display: flex;
     justify-content: space-around;
 }
@@ -1328,11 +1342,11 @@ border-color: transparent;
 .pict{
     height: 400px;
     width: 400px;
-    background-color: white;
+   
 }
 
 .same{
-    border: 1px solid red;
+  
     margin-top: 100px;
     display: grid;
     justify-items: start;
@@ -1343,6 +1357,7 @@ border-color: transparent;
 .same h1{
     font-size: 30px;
     font-weight: bold;
+    color: white;
 }
 
 
@@ -1350,7 +1365,9 @@ border-color: transparent;
 .same p{
     letter-spacing: 2px;
     color: gray;
+
 }
+
 
 .same h2{
     letter-spacing: 2px;
@@ -1359,10 +1376,78 @@ border-color: transparent;
 }
 
 
+.same, .item {
+    display: grid;
+    justify-items: start;
+    gap: 20px;
+    color: white;
+}
+
+
+.num,.us,.canada{
+    margin-left: 50px;
+    color: gray;
+}
+
+.call,.write, .find{
+    font-size: 15px;
+    font-weight: bold;
+    color:white;
+}
+
+.cost{
+    display: flex;
+    gap: 10px;
+}
+
+.click{
+    display: flex;
+    justify-content: space-around;
+}
+
+.click li{
+    margin: 20px;
+}
+
+.see{
+    color: #f39c12;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1205px){
+    .picts{
+        display: grid;
+        justify-items: center; 
+      
+    }
+
+    .pict{
+        width: 100%;
+    }
+
+}
 
 
 
 
+.top{
+   
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
 
+.author{
+    color: rgb(189, 184, 184);
+}
 
+.author span{
+    color: orange;
+}
 
+.backTotop{
+    letter-spacing: 2px;
+    color: #f39c12;
+}

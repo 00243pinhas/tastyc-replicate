@@ -1,5 +1,5 @@
 
-
+// Pause 1
 const contBoth = document.getElementById('contBoth')
 var myscrollFunct = function(){
     var scrollHeight = window.scrollY;
@@ -15,12 +15,25 @@ window.addEventListener('scroll',myscrollFunct);
 
 
 
-// Sliders 
-
-var slider = document.getElementById('slider'),
-    sliderItems = document.getElementById('slides'),
-    prev = document.getElementById('right_click')
-    next = document.getElementById('left_click')
+// pause 2
 
 
-// console.log(sliderItems)
+const pause22 =document.getElementById('pause2')
+
+var scrollFunct = function (){
+    var heighht = window.scrollY
+
+    console.log(heighht)
+    
+    if (heighht >= 5600){
+        pause22.className= 'pause2 shown'
+
+        console.log('pinhas')
+    }else{
+       
+        pause22.className='pause2 hiden'
+    }
+}
+
+
+window.addEventListener('scroll', scrollFunct)
