@@ -25,7 +25,7 @@ var scrollFunct = function (){
 
     console.log(heighht)
     
-    if (heighht >= 5600){
+    if (heighht >= 5200){
         pause22.className= 'pause2 shown'
 
         console.log('pinhas')
