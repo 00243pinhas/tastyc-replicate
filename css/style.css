@@ -4,10 +4,10 @@ body{
     background-image: url('/assets/bg.jpg');
     position: relative;
      /* overflow: hidden;    */
-     
+
 }
 
-.banner1, .banner2 , .banner3{
+/* .banner1, .banner2 , .banner3{
     height: 100vh;
     width: 100%;
     position: absolute;
@@ -266,21 +266,199 @@ body{
         height: 50%;
     }
 
-}
+} */
+
+
+img {
+    max-width: 100%;
+  }
+  
+  .caption {
+    position: absolute;
+    top: 50%;
+    left: 8rem;
+    z-index: 9;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: 500ms ease opacity, 500ms ease transform;
+    transform: translateY(60px);
+  }
+  .caption.current-caption {
+    transition-delay: 1000ms;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .caption.previous-caption {
+    transform: translateY(-60px);
+  }
+  .caption .caption-heading {
+    transition: 500ms ease-in all;
+  }
+  .caption .caption-heading h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    text-indent: -0.2rem;
+    letter-spacing: 0.2rem;
+    font-weight: 300;
+  }
+  .caption .caption-subhead {
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 4px;
+    word-spacing: 0.1rem;
+    margin-bottom: 2.5rem;
+    display: block;
+  }
+  .caption a.btn {
+    color: #333;
+    font-size: 0.8rem;
+    text-decoration: none;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    position: relative;
+    z-index: 9;
+    transition: 250ms ease-in background-color, 500ms ease-in color;
+  }
+  .caption a.btn:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100vh;
+    /* background-color: #2C302E; */
+    display: flex;
+    position: relative;
+  }
+  
+  .left-col, .right-col {
+    width: 100%;
+    box-sizing: border-box;
+    height: calc(100% - 4rem);
+    overflow: hidden;
+  }
+  
+  .left-col {
+    background-size: cover;
+    background-position: center top;
+    overflow: hidden;
+    margin: 2rem;
+    position: relative;
+  }
+  .left-col .slide {
+    /* filter: grayscale(100%); */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: left top !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: 1000ms cubic-bezier(1, 0.04, 0.355, 1) transform, 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55) clip-path;
+    transform: translateY(-100%);
+    scale: 1;
+    z-index: -1;
+  }
+  .left-col .slide.previous {
+    z-index: 1;
+    opacity: 1;
+    transform: translateY(0);
+    animation-delay: 1s;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    transition: 3s ease transform;
+    will-change: transform;
+  }
+  .left-col .slide.previous.change {
+    transform: translateY(50%);
+  }
+  .left-col .slide.next {
+    transform: translateY(-100%);
+    z-index: 3;
+    opacity: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+  }
+  .left-col .slide.current {
+    opacity: 1;
+    transform: translateY(0) scale(1.25);
+    z-index: 2;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  
+  .right-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .right-col .preview {
+    max-width: 400px;
+  }
+  
+  .nav {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+    overflow: hidden;
+  }
+  .nav a {
+    color: #fafafa;
+    font-size: 3rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  }
+  .nav:hover .slide-up, .nav:hover .slide-down {
+    opacity: 0.5;
+    transform: translateX(0);
+  }
+  .nav .slide-up, .nav .slide-down {
+    display: block;
+    position: absolute;
+    text-align: center;
+    padding: 1rem;
+    opacity: 0;
+    transition: 0.25s ease opacity, 0.25s ease transform;
+    z-index: 99;
+  }
+  .nav .slide-up:hover, .nav .slide-down:hover {
+    opacity: 1;
+  }
+  .nav .slide-up a, .nav .slide-down a {
+    text-decoration: none;
+    font-weight: 300 !important;
+  }
+  .nav .slide-up {
+    top: 50%;
+    left: 0;
+    transform: translateX(-100%);
+  }
+  .nav .slide-down {
+    top: 50%;
+    right: 0;
+    transform: translateX(100%);
+  }
 
 /* All Menu I */
 
 .AllMenu{
     background-color: azure;
     width: 97%;
-    margin-top: 30%;
+    /* margin-top: 0%; */
     overflow: hidden;
-    z-index: 1;
+    z-index: 99999;
     margin-left: 17px;
     border-radius: 5px;
-  
-   
-    
+
+
+
 }
 
 
@@ -291,7 +469,7 @@ body{
     display: flex;
     justify-content: space-around;
     margin: 50px;
-} 
+}
 
 .itemVideo{
 
@@ -302,8 +480,8 @@ body{
 .itemText{
 
     display: grid;
-    justify-items: start ; 
-    
+    justify-items: start ;
+
 }
 
 .texts {
@@ -355,7 +533,7 @@ body{
 
 .reseau ul li{
     margin-left: 15px;
-  
+
 }
 
 
@@ -375,8 +553,8 @@ body{
     }
 
     .itemVideo img{
-     
-        width: 100%;   
+
+        width: 100%;
         object-fit: cover;
     }
 
@@ -413,7 +591,7 @@ body{
     font-size: 20px;
     margin-left: 200px;
     margin-top: 15px;
-   
+
 }
 
 .featuresInfo h2{
@@ -434,7 +612,7 @@ body{
 
 
 .logos{
-  
+
     margin-top: 50px;
 }
 
@@ -442,7 +620,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-   
+
 }
 
 .logo1{
@@ -461,13 +639,13 @@ body{
  .logo1 h1{
     font-size: 30px;
     font-weight: bold;
-} 
+}
 
 .logo1 p{
     letter-spacing: 2px;
     color: gray;
     margin-top: 50px;
-} 
+}
 
 @media screen and (max-width:   1320px){
 
@@ -493,7 +671,7 @@ body{
 
 
 .aboutUs{
-  
+
     display: grid;
     justify-items: center;
 }
@@ -514,7 +692,7 @@ body{
 
 
 .pubTxt{
-  
+
     display: grid;
     justify-items: start;
     gap: 20px;
@@ -537,7 +715,7 @@ body{
 }
 
 .pubTxtBtn{
-  
+
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
@@ -564,7 +742,7 @@ body{
 
 
 .pubTime{
-   
+
     margin-top: 10px ;
     margin-bottom: 10px ;
     background-color: white;
@@ -572,13 +750,13 @@ body{
 }
 
 .pubTimeTabl{
-   
+
     margin: 50px;
 
 }
 
 .weekDay{
-  
+
     display: grid;
     justify-items: center;
     gap: 20px;
@@ -603,7 +781,7 @@ body{
 
 
 .weekEnd{
- 
+
     display: grid;
     justify-items: center;
     gap: 20px;
@@ -629,7 +807,7 @@ body{
    @media screen and (max-width:   1320px){
     .pub{
         width: auto;
-        
+
     }
    }
 
@@ -644,7 +822,7 @@ body{
     .pub{
         height: auto;
         display: grid;
-  
+
 
     }
    }
@@ -667,7 +845,7 @@ body{
 .time p{
     font-size: 20px;
     letter-spacing: 2px;
-   
+
 }
 
 .time span{
@@ -695,7 +873,7 @@ body{
     margin: 30px;
     z-index: 1;
     transition: all .5s;
-    
+
 }
 
 .hide{
@@ -704,23 +882,23 @@ body{
 
 .show {
     opacity:1;
-  
+
 }
 
 .mobliApp{
-   
+
     display: grid;
     justify-items: start;
     gap: 20px;
     margin: 70px;
-   
+
 }
 .app{
- 
+
     display: grid;
     justify-items: start;
     gap: 20px;
-   
+
 }
 
 .app h1{
@@ -776,7 +954,7 @@ body{
 
 
 .indirim{
- 
+
     width: 600px;
     height: 500px;
     object-fit: cover;
@@ -795,11 +973,11 @@ body{
     }
 
     .app{
-    
+
         display: grid;
         justify-items: center;
         gap: 20px;
-       
+
     }
 
     .mobliApp{
@@ -831,7 +1009,7 @@ body{
     overflow: hidden;
     z-index: 1;
     margin-left: 17px;
-    border-radius: 5px;  
+    border-radius: 5px;
 }
 
 .testimonials{
@@ -842,11 +1020,11 @@ body{
 }
 
 .testimonial{
- 
+
     margin: 10px;
     display: grid;
     justify-items: center;
-    gap: 30px;   
+    gap: 30px;
 
 }
 
@@ -854,7 +1032,7 @@ body{
     font-size: 20px;
     letter-spacing: 2px;
     font-weight: bold;
-   
+
 }
 
 
@@ -872,24 +1050,24 @@ body{
     color: gray;
     text-align: center;
     letter-spacing: 2px;
-    line-height: 2;  
+    line-height: 2;
 }
 
 
 
 .slide{
-   
+
     display: flex;
     justify-content: space-around;
 
 }
 
 .card1{
-    
+
     height: 450px;
     width: 300px;
     border: 2px dotted gray;
-  
+
 }
 
 .card2{
@@ -905,7 +1083,7 @@ body{
 }
 
 .card2 p{
-    line-height: 1.6; 
+    line-height: 1.6;
     letter-spacing: 2px;
 }
 
@@ -931,7 +1109,7 @@ border-color: transparent;
 }
 
 .dotedLine{
-    
+
     height: 1;
     /* margin: 60px 0; */
     border-bottom: dotted 2px gray;
@@ -984,7 +1162,7 @@ border-color: transparent;
   .rightSlide{
     margin-right: 20px;
     border-radius: 10%;
-    
+
   }
 
 
@@ -1014,7 +1192,7 @@ border-color: transparent;
 
 
   .newsLates{
- 
+
     display: grid;
     justify-items: center;
     margin: 20px;
@@ -1023,7 +1201,7 @@ border-color: transparent;
   }
 
   .newsLate{
-   
+
     margin: 20px;
     display: grid;
     justify-items: center;
@@ -1052,7 +1230,7 @@ border-color: transparent;
 
 
   .desert{
-  
+
     display: flex;
     justify-content: space-around;
     margin: 20px;
@@ -1074,7 +1252,7 @@ border-color: transparent;
   }
 
   .image h1{
-  
+
    position: absolute;
     font-weight: 800;
     top: 30px;
@@ -1095,17 +1273,17 @@ border-color: transparent;
     margin: 10px;
   }
 
- 
+
 
 
   .board{
     display: grid;
     justify-items: center;
-   
+
   }
 
   .board h1{
- 
+
     font-size: 30px;
     font-weight: bold;
   }
@@ -1118,8 +1296,8 @@ border-color: transparent;
 
   .board p span{
     color: orange;
-  } 
-  
+  }
+
 
   .profil{
 
@@ -1146,7 +1324,7 @@ border-color: transparent;
   }
 
   .alPubs{
- 
+
     margin: 40px;
   }
 
@@ -1182,12 +1360,12 @@ border-color: transparent;
 
 
   @media screen and (max-width: 1205px){
- 
+
        .alPub{
         display: grid;
         justify-content: center;
         gap: 10px;
-       } 
+       }
 
        .pube{
         text-align: center;
@@ -1223,7 +1401,7 @@ border-color: transparent;
 }
 
 .newperson{
-    
+
     margin: 150px;
     display: grid;
     justify-items: center;
@@ -1278,11 +1456,11 @@ border-color: transparent;
 /* PAUSE 2 */
 
 .pause2{
-   
+
     z-index: 1;
     transition: all .5s;
     margin: 40px;
-    
+
 }
 
 .hiden {
@@ -1298,11 +1476,11 @@ border-color: transparent;
 } */
 
 .nework{
-  
-    
+
+
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 .nework img{
@@ -1314,7 +1492,7 @@ border-color: transparent;
     display: flex;
     justify-content: space-around;
     margin: 20px;
-    
+
 }
 
 .nework ul li{
@@ -1329,7 +1507,7 @@ border-color: transparent;
 }
 
 .callUs{
-   
+
     margin-top: 30px;
 }
 
@@ -1342,11 +1520,11 @@ border-color: transparent;
 .pict{
     height: 400px;
     width: 400px;
-   
+
 }
 
 .same{
-  
+
     margin-top: 100px;
     display: grid;
     justify-items: start;
@@ -1418,8 +1596,8 @@ border-color: transparent;
 @media screen and (max-width: 1205px){
     .picts{
         display: grid;
-        justify-items: center; 
-      
+        justify-items: center;
+
     }
 
     .pict{
@@ -1432,11 +1610,11 @@ border-color: transparent;
 
 
 .top{
-   
+
     margin: 20px;
     display: flex;
     justify-content: space-between;
-    
+
 }
 
 .author{
@@ -1464,7 +1642,7 @@ border-color: transparent;
     top: 0;
     margin-top: 5px;
     min-width: 96%;
-} 
+}
 
 
 .logo img{
@@ -1481,12 +1659,12 @@ border-color: transparent;
 
 
 .menu0{
-   
+
     display: flex;
     justify-content: space-between;
     margin: 20px ;
     align-items: center;
-    
+
 }
 
 
@@ -1494,10 +1672,10 @@ border-color: transparent;
     position: relative;
 }
 .links ul{
-   
+
     display: flex;
     justify-content: space-around;
-    
+
 }
 
 .links ul li{
@@ -1515,7 +1693,7 @@ border-color: transparent;
 .reservBtn {
     display: flex;
     justify-content: space-around;
-    align-items: center;    
+    align-items: center;
 }
 
 
@@ -1555,24 +1733,24 @@ border-color: transparent;
     .menu0{
         display: grid;
         justify-items: center;
-     
+
     }
 
     .reservBtn{
         display: grid;
         justify-items: center;
-      
-        
+
+
     } */
 
     .allMenu0s{
         width: auto;
     }
-} 
+}
  .submenu{
-    display: none; 
-   
-} 
+    display: none;
+
+}
 
 
 .links li:hover .submenu {
@@ -1585,11 +1763,11 @@ border-color: transparent;
 }
 
 .links li:hover .submenu ul{
-   
-    
+
+
     display: block;
     margin: 10px;
     z-index: 999;
-    
+
 }
 
