@@ -571,9 +571,15 @@ img {
 /* Tables 2  */
 
 
+.table2{
+  
+    margin: 30px;
+}
+
 .features{
     display: grid;
     justify-items: center;
+
 }
 
 .featuresInfo{
