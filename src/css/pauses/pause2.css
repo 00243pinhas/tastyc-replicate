@@ -1,0 +1,197 @@
+
+
+/* PAUSE 2 */
+
+.pause2{
+
+    z-index: 1;
+    transition: all .5s;
+    margin: 40px;
+
+}
+
+.hiden {
+    opacity:0;
+}
+
+.shown{
+    opacity:1;
+}
+
+/* .neworks{
+    border: 2px solid yellow;
+} */
+
+.nework{
+
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nework img{
+ color: white;
+ height: 50px;
+}
+
+.nework ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+
+}
+
+.nework ul li{
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nework ul li :hover {
+    color: #f39c12;
+}
+
+.callUs{
+
+    margin-top: 30px;
+}
+
+.picts{
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.pict{
+    height: 400px;
+    width: 400px;
+
+}
+
+.same{
+
+    margin-top: 100px;
+    display: grid;
+    justify-items: start;
+    gap: 20px;
+}
+
+
+.same h1{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+.same p{
+    letter-spacing: 2px;
+    color: gray;
+
+}
+
+
+.same h2{
+    letter-spacing: 2px;
+    color: #f39c12;
+    font-weight: bold;
+}
+
+
+.same, .item {
+    display: grid;
+    justify-items: start;
+    gap: 20px;
+    color: white;
+}
+
+
+.num,.us,.canada{
+    margin-left: 50px;
+    color: gray;
+}
+
+.call,.write, .find{
+    font-size: 15px;
+    font-weight: bold;
+    color:white;
+}
+
+.cost{
+    display: flex;
+    gap: 10px;
+}
+
+.click{
+    display: flex;
+    justify-content: space-around;
+}
+
+.click li{
+    margin: 20px;
+}
+
+.see{
+    color: #f39c12;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1205px){
+    .picts{
+        display: grid;
+        justify-items: center;
+
+    }
+
+    .pict{
+        width: 100%;
+    }
+
+}
+
+
+
+
+.top{
+
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.author{
+    color: rgb(189, 184, 184);
+}
+
+.author span{
+    color: orange;
+}
+
+.backTotop{
+    letter-spacing: 2px;
+    color: #f39c12;
+}
+
+
+.allMenu0s{
+    background-color: azure;
+    width: 97%;
+    overflow: hidden;
+    z-index: 9999;
+    margin-left: 17px;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    margin-top: 5px;
+    min-width: 96%;
+}
+
+
+.logo img{
+    height: 50px;
+}

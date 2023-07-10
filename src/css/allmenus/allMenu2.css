@@ -1,0 +1,453 @@
+
+/* All Menu II */
+
+.AllMenu2{
+
+    background-color: azure;
+    width: 97%;
+    margin-top: 5%;
+    overflow: hidden;
+    z-index: 1;
+    margin-left: 17px;
+    border-radius: 5px;
+}
+
+.testimonials{
+    display: grid;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.testimonial{
+
+    margin: 10px;
+    display: grid;
+    justify-items: center;
+    gap: 30px;
+
+}
+
+.testimonial h1{
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+
+}
+
+
+.testimonial h2{
+    display: grid;
+    justify-items: start;
+
+    gap: 2px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.testimonial p{
+    font-size: 15px;
+    color: gray;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+
+
+
+.slide{
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.card1{
+
+    height: 450px;
+    width: 300px;
+    border: 2px dotted gray;
+
+}
+
+.card2{
+    margin: 20px;
+    display: grid;
+    align-items: start;
+    gap: 20px;
+}
+
+.card2 h1{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.card2 p{
+    line-height: 1.6;
+    letter-spacing: 2px;
+}
+
+#card1 {
+background-color: #fff;
+/* -webkit-box-shadow: 0 5px 10px 0 rgba(26,47,51,.11); */
+box-shadow: 0 5px 10px 0 rgba(26,47,51,.11);
+border-color: transparent;
+}
+
+
+.personName{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.personName img{
+  border-radius: 80%;
+  height: 50px;
+}
+
+.dotedLine{
+
+    height: 1;
+    /* margin: 60px 0; */
+    border-bottom: dotted 2px gray;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.personName h2{
+    font-weight: bold;
+    margin-right: 4px ;
+    margin-left: 4px;
+  }
+
+  .personName h3{
+    font-size: 14px;
+  }
+
+
+  .foot{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+  }
+
+  .sliderbtns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sliderbtns h1{
+    margin-right: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+
+  }
+
+
+  .moreAbout{
+    background-color: orange;
+    height: 60px;
+    padding: 15px;
+  }
+
+  .leftSlide{
+    margin-right: 20px;
+  }
+
+  .rightSlide{
+    margin-right: 20px;
+    border-radius: 10%;
+
+  }
+
+
+  @media screen and (max-width: 1320px){
+
+    .slide{
+        display: grid;
+        justify-items: center;
+        gap: 10px;
+    }
+    .card1{
+       display: grid;
+       justify-content: center;
+       gap: 20px;
+       width: auto;
+       height: 450px;
+    }
+
+    .foot{
+        display: grid;
+        justify-items: center;
+        gap: 10px;
+    }
+
+    /* Need To correct The resposivness  */
+  }
+
+
+  .newsLates{
+
+    display: grid;
+    justify-items: center;
+    margin: 20px;
+
+
+  }
+
+  .newsLate{
+
+    margin: 20px;
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+  }
+
+  .newsLate h1{
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+
+  .newsLate h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .newsLate p{
+    text-align: center;
+    font-size: 17px;
+    letter-spacing: 2px;
+    color: gray;
+  }
+
+
+
+  .desert{
+
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+  }
+
+  .tab{
+    height: 500px;
+    width: 300px;
+    position: relative;
+    box-shadow: 0 5px 10px 0 rgba(26,47,51,.11);
+    border-color: transparent;
+  }
+
+  .image {
+    background-image: url('/src/assets/blog-5.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 250px;
+  }
+
+  .image h1{
+
+   position: absolute;
+    font-weight: 800;
+    top: 30px;
+    left: 30px;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 5px 10px 3px;
+    border-radius: 3px;
+    background-color: #f39c12;
+  }
+
+
+
+
+  .detail{
+
+    margin: 10px;
+  }
+
+
+
+
+  .board{
+    display: grid;
+    justify-items: center;
+
+  }
+
+  .board h1{
+
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .board p{
+    margin-top: 10px;
+    letter-spacing: 2px;
+    color: gray;
+  }
+
+  .board p span{
+    color: orange;
+  }
+
+
+  .profil{
+
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .profil img{
+    border-radius: 80%;
+    height: 50px;
+  }
+
+  .profil h1{
+    margin: 10px;
+  }
+
+  .profil p{
+    margin: 10px;
+    background-color: gray;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 15px;
+  }
+
+  .alPubs{
+
+    margin: 40px;
+  }
+
+  .alPub{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .pube{
+    letter-spacing: 2px;
+    color: gray;
+    padding: 20px;
+  }
+
+  .pubebtn{
+    background-color: orange;
+    height: 60px;
+    width: 200px;
+    padding: 20px;
+  }
+
+
+
+  .dotedLin{
+    height: -1;
+    /* margin: 60px 0; */
+    border-bottom: dotted 2px rgb(88, 25, 25);
+    /* margin-left: 5%;
+    margin-right: 5%; */
+    margin: 7%;
+}
+
+
+
+  @media screen and (max-width: 1205px){
+
+       .alPub{
+        display: grid;
+        justify-content: center;
+        gap: 10px;
+       }
+
+       .pube{
+        text-align: center;
+       }
+
+       .desert{
+        display: grid;
+        justify-content: center;
+        gap: 10px;
+       }
+
+       .tab{
+        height: 500px;
+        width: auto;
+        border: 1px solid black;
+        position: relative;
+      }
+
+  }
+
+
+.suscribition{
+
+    margin-top: 50px;
+}
+
+.suscrib{
+    border: 1px solid black;
+    margin: 60px;
+    background-image: url('/src/assets/gallery-i-6.jpg');
+    filter: brightness(60%);
+    object-fit: contain;
+}
+
+.newperson{
+
+    margin: 150px;
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    grid: 20px;
+}
+
+.newperson h1{
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: white;
+}
+
+.newperson h2{
+    font-size: 80px;
+    color: white;
+
+}
+
+.newperson p{
+    letter-spacing: 2px;
+    color: gray;
+}
+
+.email{
+
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.email h1{
+
+    background-color: #f39c12;
+    height: 50px;
+    width: 120px;
+    padding: 10px;
+    cursor: pointer;
+    color: black;
+
+}
+
+
+.email input{
+    margin-right: 70px;
+    height: 50px;
+    background-color: white;
+    z-index: 1;
+}

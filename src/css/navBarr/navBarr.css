@@ -1,0 +1,122 @@
+
+/* NavBarre */
+
+
+.logo img{
+    height: 50px;
+}
+
+
+
+.menu0{
+
+    display: flex;
+    justify-content: space-between;
+    margin: 20px ;
+    align-items: center;
+
+}
+
+
+.links{
+    position: relative;
+}
+.links ul{
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.links ul li{
+    /* margin-left: 100px */
+    margin-left: 30px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.links ul li span:hover{
+    color: #f39c12;
+}
+
+
+.reservBtn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.reservation{
+    margin-right: 20px;
+    background-color: orange;
+    height: 50px;
+    width: 120px;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.burger{
+    margin-left: 20px;
+    display: none;
+}
+
+@media screen and (max-width: 1320px){
+    .links ul{
+        display: none;
+    }
+    .reservation{
+        display: none;
+    }
+
+    .burger{
+        display: block;
+    }
+
+}
+
+ @media screen and (max-width: 830px){
+    /* .allMenu0s{
+        display: grid;
+        justify-content: center;
+    }
+    .menu0{
+        display: grid;
+        justify-items: center;
+
+    }
+
+    .reservBtn{
+        display: grid;
+        justify-items: center;
+
+
+    } */
+
+    .allMenu0s{
+        width: auto;
+    }
+}
+ .submenu{
+    display: none;
+
+}
+
+
+.links li:hover .submenu {
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 15px;
+    background-color: #f89c08;
+    border-radius: 5px;
+}
+
+.links li:hover .submenu ul{
+
+
+    display: block;
+    margin: 10px;
+    z-index: 999;
+
+}

@@ -1,0 +1,134 @@
+
+
+/* Table 5 Pause */
+
+
+.contBoth{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+    z-index: 1;
+    transition: all .5s;
+
+}
+
+.hide{
+    opacity:0;
+}
+
+.show {
+    opacity:1;
+
+}
+
+.mobliApp{
+
+    display: grid;
+    justify-items: start;
+    gap: 20px;
+    margin: 70px;
+
+}
+.app{
+
+    display: grid;
+    justify-items: start;
+    gap: 20px;
+
+}
+
+.app h1{
+
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+
+.app h2{
+
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+
+}
+
+.app p{
+
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2;
+
+
+}
+
+.appBtns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.appBtnAp{
+    background-color: orange;
+    height: 50px;
+    width: 140px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.appBtnGoo{
+    background-color: orange;
+    height: 50px;
+    width: 140px;
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+
+
+
+
+.indirim{
+
+    width: 600px;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+@media screen and (max-width:   1320px){
+    .contBoth{
+        display: grid;
+        align-items: center;
+        width: auto;
+    }
+
+    .indirim{
+        width: auto;
+    }
+
+    .app{
+
+        display: grid;
+        justify-items: center;
+        gap: 20px;
+
+    }
+
+    .mobliApp{
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 599px){
+
+    .contBoth{
+        display: grid;
+        align-content:center ;
+
+        
+    }
+}
