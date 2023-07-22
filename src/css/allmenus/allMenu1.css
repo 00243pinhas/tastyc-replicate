@@ -8,6 +8,8 @@
     z-index: 99999;
     margin-left: 17px;
     border-radius: 5px;
+   
+    
 }
 
 
@@ -237,7 +239,7 @@
     width: 1200px;
     display: flex;
     justify-content: space-between;
-    background-image: url('/src/assets/gallery-i-1.jpg'); 
+    background-image: url('assets/gallery-i-1.jpg'); 
     background-repeat: repeat;
     object-fit: cover;
 

@@ -178,20 +178,3 @@
 }
 
 
-.allMenu0s{
-    background-color: azure;
-    width: 97%;
-    overflow: hidden;
-    z-index: 9999;
-    margin-left: 17px;
-    border-radius: 10px;
-    position: fixed;
-    top: 0;
-    margin-top: 5px;
-    min-width: 96%;
-}
-
-
-.logo img{
-    height: 50px;
-}

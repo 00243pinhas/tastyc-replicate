@@ -45,6 +45,10 @@
     font-weight: bold;
 }
 
+
+
+
+
 .testimonial p{
     font-size: 15px;
     color: gray;
@@ -53,14 +57,47 @@
     line-height: 2;
 }
 
-
-
-.slide{
-
-    display: flex;
-    justify-content: space-around;
-
+.slide
+ {
+  position: relative;
+  width: 100%;
+  
 }
+
+.wrapper_pi {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.slides_pi {
+  width: 20000px;
+  border: 2px solid green;
+  display: flex;
+  justify-content: start;
+  overflow: scroll;
+  margin-left: 100px;
+}
+
+
+.slide_pi {
+  cursor: pointer;
+  transition: all 1s;
+  position: relative;
+  text-align: center;
+  border-radius: 2px;
+  overflow: scroll;
+  border: 3px solid red;
+  display: flex;
+  justify-content: space-around;
+  gap: 85px;;
+}
+
+.shifting {
+  transition: left 0.4s ease-out;
+}
+
 
 .card1{
 
@@ -245,7 +282,7 @@ border-color: transparent;
   }
 
   .image {
-    background-image: url('/src/assets/blog-5.jpg');
+    background-image: url('assets/blog-5.jpg'); 
     background-size: cover;
     background-position: 50% 50%;
     height: 250px;
@@ -395,7 +432,7 @@ border-color: transparent;
 .suscrib{
     border: 1px solid black;
     margin: 60px;
-    background-image: url('/src/assets/gallery-i-6.jpg');
+    background-image: url('assets/gallery-i-6.jpg');
     filter: brightness(60%);
     object-fit: contain;
 }

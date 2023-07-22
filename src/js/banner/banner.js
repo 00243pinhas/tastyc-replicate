@@ -7,17 +7,17 @@
 
 let slide_data = [
     {
-      'src':'/src/assets/home-slide-1.jpg',
+      'src':'assets/home-slide-1.jpg',
       'title':'Slide 1',
       'copy':'DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.'
     },
     {
-      'src':'/src/assets/home-slide-2.jpg', 
+      'src':'assets/home-slide-2.jpg', 
       'title':'Slide 2',
       'copy':'DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.'
     },
     {
-        'src':'/src/assets/home-slide-3.jpg', 
+        'src':'assets/home-slide-3.jpg', 
       'title':'Slide 3',
       'copy':'DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT.'
     },
