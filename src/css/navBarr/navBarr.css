@@ -1,1 +1,177 @@
-/* dgdgd==fhfh */
+/* Mussa Coppies  */
+
+header{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* margin-top: 10px; */
+    align-items: center;
+    width: 97%;
+    margin-left: 17px;
+    display: flex;
+    justify-content: space-around;
+    background-color: azure;
+    z-index: 999;
+    border-radius: 10px;
+
+}
+
+header.logo{
+    max-width: 100px;
+    text-decoration: none;
+}
+
+.logo img{
+    height: 40px;
+}
+
+
+header ul{
+    position: relative;
+}
+
+
+header ul li {
+    position: relative;
+    list-style: none;
+    float: left;
+}
+
+header ul li a {
+    color: black;
+    font-size: 1.1em;
+    padding: 20px 18px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+header ul li ul {
+    position: absolute;
+    left: 0;
+    width: 180px;
+    background-color: #f4f1f1;
+    display: none;
+    
+}
+
+header ul li:hover > ul {
+    display: block;
+    background-color: orange;
+}
+
+header ul li ul li {
+    position: relative;
+    width: 100%;
+    border: 1px solid orange;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+
+.booking{
+    display: flex;
+    justify-content: space-between;     
+}
+
+.cli{
+    background-color: orange;
+    height: 50px;
+    width: 120px;
+    padding: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.bags{
+    padding: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+
+
+/*  Hamburger */
+
+
+
+.hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    background-color: rgb(16, 14, 14);
+}
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+
+.fa-angle-down {
+    padding: 4px 5px;
+}
+
+
+
+
+
+@media screen and (max-width: 1120px) {
+
+
+    .booking{
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    header {
+        padding: 10px 20px;
+    }
+    header nav ul li a {
+        color: #3a3a3a;
+    }
+    header nav {
+        z-index: 999;
+        position: absolute;
+        width: 100%;
+        top: 66px;
+        left: 0;
+        background: #ffff;
+        display: none;
+        transition: all 5s ease-in-out;
+    }
+    .navbarre.active nav {
+        display: initial;
+        transition: all 5s ease-in-out;
+    }
+    header nav ul li {
+        width: 100%;
+    }
+    header nav ul li ul {
+        position: relative;
+        width: 100%;
+        left: 0;
+    }
+
+    header ul li ul li ul {
+        top: 0;
+        left: 0;
+        color: #3a3a3a;
+    }
+}

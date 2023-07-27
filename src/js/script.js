@@ -15,3 +15,7 @@ import './banner/banner';
 // sliders
 
 import './sliders/slideerOne';
+
+//NavBARE
+
+import './NavBarre/nav';
